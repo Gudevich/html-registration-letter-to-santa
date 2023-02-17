@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Письмо Санте</title>
+</head>
+<body bgcolor="#708090">
+<img src="santa.jpg" width="500px" height="auto">
+<h1><b>Письмо Санте</b></h1>
+<hr>
+<p>Дорогой друг, не стесняйся и расскажи Санте, кто ты и о том, что ты хочешь получить на Рождество.</p>
+
+<br>
+<form action="greetings.html">
+<p><input name="Login" placeholder="Логин" required>
+<br>
+<p><input name="pass" type="Password" placeholder="Пароль" required>
+<br>
+<p><input name="name" placeholder="Имя" required>
+<br>
+<p>Пол:</p>
+
+<input type="radio" name="answer" value="1" required> Мальчик
+<input type="radio" name="answer" value="2"require> Девочка
+<input type="radio"name="answer" value="3" require> Другой
+<br>
+
+<p>Выберите дату:
+<input type="date" name="calendar" required>
+</p>
+<p>Выбери какую игрушку ты хочешь :</p>
+
+<select name="toys" size="1" required>
+    <option selected value="a1">Спортивная машинка</option>
+    <option value="a2">Электросамокат</option>
+    <option value="a3">Домик Барби</option>
+    <option value="a4">Кукла вуду</option>
+    <option value="a5">Диск смешарики</option>
+</select>
+    <p>Ты слушался родителей?</p>
+    <input type="radio"name="answer" value="4" required> Да
+    <input type="radio"name="answer" value="5" required> Конечно
+    <input type="radio"name="answer" value="6" required> Я самый послушный(ая)
+    <br>
+    <hr>
+    <button type="submit">Отправить Санте письмо </button>
+
+</form>
+</body>
+</html>
