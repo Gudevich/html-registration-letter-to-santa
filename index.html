@@ -12,21 +12,25 @@
 
 <br>
 <form action="greetings.html">
-<p><input name="Login" placeholder="Логин" required>
+    <label>Логин</label>
+<input type="text" name="Login" placeholder="Логин" required>
+<br><br>
+    <label>Введите пароль</label>
+<input name="pass" type="Password" placeholder="Пароль" required>
+<br><br>
+    <label>Введите Имя</label>
+<input type="text" name="name" placeholder="Имя" required>
 <br>
-<p><input name="pass" type="Password" placeholder="Пароль" required>
-<br>
-<p><input name="name" placeholder="Имя" required>
-<br>
+
 <p>Пол:</p>
 
-<input type="radio" name="answer" value="1" required> Мальчик
-<input type="radio" name="answer" value="2"require> Девочка
-<input type="radio"name="answer" value="3" require> Другой
+<input type="radio" name="answer" id="boy" required> Мальчик
+<input type="radio" name="answer" id="girl" required> Девочка
+<input type="radio" name="answer" id="another" required> Другой
 <br>
 
 <p>Выберите дату:
-<input type="date" name="calendar" required>
+<input type="date" name="calendar" id="calendar" required>
 </p>
 <p>Выбери какую игрушку ты хочешь :</p>
 
@@ -37,10 +41,14 @@
     <option value="a4">Кукла вуду</option>
     <option value="a5">Диск смешарики</option>
 </select>
+
+    <p>Выбери какого цвета игрушку ты хочешь.</p>
+    <input type="color" name="color" id="color">
+
     <p>Ты слушался родителей?</p>
-    <input type="radio"name="answer" value="4" required> Да
-    <input type="radio"name="answer" value="5" required> Конечно
-    <input type="radio"name="answer" value="6" required> Я самый послушный(ая)
+    <input type="radio" name="answer" id="yes" required> Да
+    <input type="radio" name="answer" id="of course" required> Конечно
+    <input type="radio" name="answer" id="i'm very good" required> Я самый послушный(ая)
     <br>
     <hr>
     <button type="submit">Отправить Санте письмо </button>
